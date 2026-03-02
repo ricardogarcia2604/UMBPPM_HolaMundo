@@ -5,44 +5,48 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@android:color/white">
 
     <TextView
-        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="67dp"
         android:text="Hola Mundo App"
         android:gravity="center"
         android:textStyle="bold"
-        android:textSize="20dp"/>
+        android:textSize="20sp"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewAvatar"
         android:layout_width="match_parent"
         android:layout_height="108dp"
         tools:src="@tools:sample/avatars"
-        android:layout_margin="12dp"/>
+        android:layout_margin="12dp"
+        android:contentDescription="Avatar image"/>
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Ingrese su correo"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:layout_margin="12dp"/>
+        android:layout_margin="12dp"
+        android:importantForAutofill="no"/>
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Contraseña"
         android:ems="10"
         android:inputType="textPassword"
-        android:layout_margin="12dp"/>
+        android:layout_margin="12dp"
+        android:importantForAutofill="no"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ingresar"
